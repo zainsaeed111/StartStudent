@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/last_nav"
+    app:startDestination="@id/introViewPager">
+    <fragment
+        android:id="@+id/introViewPager"
+        android:name="com.example.startstudent.IntroFragments.IntroViewPager"
+        android:label="fragment_intro_view_pager"
+        tools:layout="@layout/fragment_intro_view_pager" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.startstudent.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/forgetPassEnterEmail"
+        android:name="com.example.startstudent.fragments.ForgetPassEnterEmail"
+        android:label="fragment_forget_pass_enter_email"
+        tools:layout="@layout/fragment_forget_pass_enter_email" />
+    <fragment
+        android:id="@+id/loginForgetOtp"
+        android:name="com.example.startstudent.fragments.LoginForgetOtp"
+        android:label="fragment_login_forget_otp"
+        tools:layout="@layout/fragment_login_forget_otp" />
+    <fragment
+        android:id="@+id/loginNewPassword"
+        android:name="com.example.startstudent.fragments.LoginNewPassword"
+        android:label="fragment_login_new_password"
+        tools:layout="@layout/fragment_login_new_password" />
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.startstudent.fragments.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/suscribtionList"
+        android:name="com.example.startstudent.fragments.SuscribtionList"
+        android:label="fragment_suscribtion_list"
+        tools:layout="@layout/fragment_suscribtion_list" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.startstudent.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/flashCard2"
+        android:name="com.example.startstudent.fragments.FlashCard"
+        android:label="fragment_flash_card"
+        tools:layout="@layout/fragment_flash_card" />
+    <fragment
+        android:id="@+id/drawerProfile"
+        android:name="com.example.startstudent.drawerFragments.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/drawermyFlashcards"
+        android:name="com.example.startstudent.drawerFragments.MyFlashcards"
+        android:label="fragment_my_flashcards"
+        tools:layout="@layout/fragment_my_flashcards" />
+    <fragment
+        android:id="@+id/drawermyPackage"
+        android:name="com.example.startstudent.drawerFragments.MyPackage"
+        android:label="fragment_my_package"
+        tools:layout="@layout/fragment_my_package" />
+    <fragment
+        android:id="@+id/drawerAboutUs"
+        android:name="com.example.startstudent.drawerFragments.AboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/drawerTerms"
+        android:name="com.example.startstudent.drawerFragments.TermsAndConditions"
+        android:label="fragment_terms_and_conditions"
+        tools:layout="@layout/fragment_terms_and_conditions" />
+    <fragment
+        android:id="@+id/updatePassword2"
+        android:name="com.example.startstudent.drawerFragments.UpdatePassword"
+        android:label="fragment_update_password"
+        tools:layout="@layout/fragment_update_password" />
+</navigation>

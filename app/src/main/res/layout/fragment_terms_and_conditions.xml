@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".drawerFragments.TermsAndConditions">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <TextView
+            android:id="@+id/textView100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Lorem ipsum"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="106dp" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available."
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <TextView
+            android:id="@+id/textView00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Lorem ipsum"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="106dp" />
+        <TextView
+            android:id="@+id/textView1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available."
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Lorem ipsum"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="106dp" />
+        <TextView
+            android:id="@+id/textView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.psum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be usedpsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <TextView
+            android:id="@+id/textViewp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Lorem ipsum"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="106dp" />
+        <TextView
+            android:id="@+id/textViewd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available."
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="106dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

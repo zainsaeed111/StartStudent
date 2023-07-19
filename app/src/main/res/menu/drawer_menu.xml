@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/drawerProfile"
+        android:title="Profile"
+        android:icon="@drawable/drawer_header_profile_icon"
+        />
+
+    <item
+        android:id="@+id/drawermyFlashcards"
+        android:title="My Flashcards"
+        android:icon="@drawable/drawer_header_myflashcard_icon"
+        />
+
+    <item
+        android:id="@+id/drawermyPackage"
+        android:title="My Package"
+        android:icon="@drawable/drawer_header_mypackage_icon"
+        />
+    <item
+        android:id="@+id/drawerAboutUs"
+        android:title="About us"
+        android:icon="@drawable/drawer_header_aboutus_icon"
+        />
+    <item
+        android:id="@+id/drawerTerms"
+        android:title="Term and Conditions"
+        android:icon="@drawable/drawer_header_terms_icon"
+        />
+    <item
+        android:title=""
+        />
+    <item
+        android:title=""
+        />
+    <item
+        android:id="@+id/none"
+        android:title="" />
+    <item
+        android:id="@+id/drawerLogOut"
+        android:title="Logout"
+        android:icon="@drawable/drawer_header_logout_icon"
+        android:layout_marginTop="16dp"
+        />
+</menu>

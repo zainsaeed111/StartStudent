@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/send_icon_chat_gpt" />
+
+    <!-- Set the padding for the icon Drawable -->
+    <item
+        android:drawable="@drawable/send_icon_chati_gpt"
+        android:left="@dimen/_10sdp"
+        android:right="@dimen/_10sdp"
+        android:top="8dp"
+        android:bottom="8dp" />
+</layer-list>
+
+

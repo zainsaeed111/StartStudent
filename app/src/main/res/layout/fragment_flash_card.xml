@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.FlashCard">
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:boxBackgroundMode="none"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            app:passwordToggleTint="@color/grey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSearchHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:background="@drawable/serach_view_bg_iii_grey"
+                android:drawableEnd="@drawable/serachicon_dashboard"
+                android:drawablePadding="10dp"
+                android:hint="Search Here"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+            android:id="@+id/filerserachImgbtnflashhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search_filter_dashboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cotogeryflashRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashCard" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewAllflashRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:auto_fit_span="2"
+        app:auto_fit_min_width="200dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flash_card_bg_gradient"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ettypeflashHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:background="@drawable/round_edit_text"
+        android:drawableEnd="@drawable/edittext_end_icon_chatgpt"
+        android:drawablePadding="10dp"
+        android:hint="Type Here"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/statusCard"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.material.textfield.TextInputEditText>
+</LinearLayout>
+
+</LinearLayout>

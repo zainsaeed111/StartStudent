@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flashCard"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView">
+
+    <!-- Add your content here -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/view_all_item_bg"
+        android:padding="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:id="@+id/layerItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tvNamehomeviewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jurisdiction"
+                android:textColor="@color/secondary"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tvItemshomeviewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Items"
+                android:textColor="@color/secondary"
+                android:textSize="@dimen/_15sdp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@id/layerItemii"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layerItem">
+             <RelativeLayout
+                 android:id="@+id/relativeLayout2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/_8sdp"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toBottomOf="@id/layerItem">
+
+                 <RelativeLayout
+                     android:id="@+id/rl_1"
+                     android:layout_width="@dimen/_30sdp"
+                     android:layout_height="@dimen/_30sdp"
+                     android:layout_marginEnd="@dimen/_5sdp">
+
+                     <de.hdodenhof.circleimageview.CircleImageView
+                         android:id="@+id/civ_1"
+                         android:layout_width="@dimen/_30sdp"
+                         android:layout_height="@dimen/_30sdp"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/circular_example_imgi"
+                         app:civ_border_color="@android:color/holo_blue_light"
+                         app:civ_circle_background_color="@android:color/holo_blue_light" />
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:id="@+id/rl_2"
+                     android:layout_width="@dimen/_30sdp"
+                     android:layout_height="@dimen/_30sdp"
+                     android:layout_marginStart="-30dp"
+                     android:layout_marginLeft="-30dp"
+                     android:layout_marginEnd="@dimen/_5sdp"
+                     android:layout_toRightOf="@id/rl_1">
+
+                     <de.hdodenhof.circleimageview.CircleImageView
+                         android:id="@+id/civ_2"
+                         android:layout_width="@dimen/_30sdp"
+                         android:layout_height="@dimen/_30sdp"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/circular_example_imgi"
+                         app:civ_border_color="@android:color/holo_blue_light"
+                         app:civ_circle_background_color="@android:color/holo_blue_light" />
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:id="@+id/rl_3"
+                     android:layout_width="@dimen/_30sdp"
+                     android:layout_height="@dimen/_30sdp"
+                     android:layout_marginStart="-30dp"
+                     android:layout_marginLeft="-30dp"
+                     android:layout_marginEnd="@dimen/_5sdp"
+                     android:layout_toRightOf="@id/rl_2">
+
+                     <de.hdodenhof.circleimageview.CircleImageView
+                         android:id="@+id/civ_3"
+                         android:layout_width="@dimen/_30sdp"
+                         android:layout_height="@dimen/_30sdp"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/circular_example_imgi"
+                         app:civ_border_color="@android:color/holo_blue_light"
+                         app:civ_circle_background_color="@android:color/holo_blue_light" />
+
+                     <de.hdodenhof.circleimageview.CircleImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/circular_example_imgi" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerInParent="true"
+                         android:text="1+"
+                         android:textColor="@color/white"
+                         android:textSize="18sp" />
+
+                 </RelativeLayout>
+             </RelativeLayout>
+
+
+
+             <ProgressBar
+                 android:id="@+id/p_Bar"
+                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                 android:layout_width="@dimen/_60sdp"
+                 android:layout_height="@dimen/_3sdp"
+                 android:layout_marginTop="28dp"
+                 android:progress="50"
+                 android:progressBackgroundTint="#333333"
+                 android:progressTint="#000000"
+                 app:layout_constraintStart_toEndOf="@+id/relativeLayout2"
+                 app:layout_constraintTop_toBottomOf="@+id/layerItem" />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginTop="25dp"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/progressTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginEnd="4dp"
+               android:text="50%"
+               android:textColor="@color/secondary"
+               android:textSize="@dimen/_7sdp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toEndOf="@+id/tvstatusBtn"
+               app:layout_constraintTop_toBottomOf="@+id/layerItem" />
+
+
+           <TextView
+
+
+               android:id="@+id/tvstatusBtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:background="@drawable/dashboard_view_all_items_status_bg"
+               android:fontFamily="@font/poppinsregular"
+               android:gravity="center"
+               android:layout_marginTop="@dimen/_2sdp"
+               android:text="Good"
+               android:textAlignment="center"
+               android:textColor="@color/white"
+               android:textSize="@dimen/_4sdp"
+               android:textStyle="bold">
+
+           </TextView>
+       </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/proifleImg"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/circular_example_imgi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layerItemii"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <TextView
+            android:id="@+id/tvProfilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Charlotte"
+            android:textColor="@color/secondary"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/proifleImg"
+            app:layout_constraintTop_toBottomOf="@+id/layerItemii"
+            app:layout_constraintVertical_bias="0.615" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

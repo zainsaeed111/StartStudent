@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">StartStudent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_package_title"><b>Premium Package</b>\n10,000 Free Question</string>
+    <string name="startstudent_ai_title_toolbar">startstudent.ai</string>
+    <string name="login_Welcome">Welcome to\n<b>Start Student</b></string>
+    <string name="trail_tv">You use Free trial of\n<b>Start Student</b></string>
+    <string name="chat_reply_tv">In publishing and graphic design, Lorem ipsum is a \nplaceholder text commonly used to demonstrate\n the visual form of a document or a typeface\n without\n\nIn publishing and graphic design, Lorem ipsum is a \nplaceholder text commonly used to demonstrate\n the visual form of a document or a typeface\n without\n</string>
+
+
+    <string-array name="subject_array">
+        <item>Designing</item>
+        <item>Math</item>
+        <item>Study</item>
+        <item>Law</item>
+        <item>Sports</item>
+    </string-array>
+
+
+</resources>

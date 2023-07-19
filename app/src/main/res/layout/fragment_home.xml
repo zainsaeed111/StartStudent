@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    tools:context=".fragments.HomeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@drawable/dashboard_bg"
+        tools:context=".fragments.HomeFragment">
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/searchviewInput"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/searchview_bg"
+                        android:textColorHint="@color/secondary"
+                        app:endIconDrawable="@drawable/serachicon_dashboard"
+                        app:endIconMode="custom"
+                        app:layout_constraintEnd_toStartOf="@+id/filerserachImgbtnhome"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.SearchView
+                            android:id="@+id/searchView"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            app:searchHintIcon="@null"
+                            app:queryHint="Search Here"
+                            app:searchIcon="@null" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/filerserachImgbtnhome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/search_filter_dashboard"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/cotogeryRecycler"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/flashCard" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/flashCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_marginTop="30dp"
+                        android:padding="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_15sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/searchviewInput">
+
+                        <!-- Add your content here -->
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/flashcard_bg_dashboard"
+                            android:padding="@dimen/_10sdp">
+
+
+                            <TextView
+                                android:id="@+id/tvFlashcard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="28dp"
+                                android:fontFamily="@font/poppinsbold"
+                                android:text="FLASH CARD"
+                                android:textColor="@color/secondary"
+                                android:textSize="@dimen/_18sdp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toStartOf="@+id/imageView14"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lorem ipsum is a placeholder\n text commonly used to "
+                                android:textColor="@color/secondary"
+                                android:textSize="@dimen/_13sdp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvFlashcard">
+
+                            </TextView>
+
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_100sdp"
+                                android:src="@drawable/flashcard_vector_dashboard"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="FLASH CARD"
+                        android:textColor="@color/secondary"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cotogeryRecycler" />
+
+                    <TextView
+                        android:id="@+id/tvViewallHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="View All"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cotogeryRecycler" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/viewAllRecyclerview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/statusCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_marginTop="30dp"
+                        android:padding="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_15sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/viewAllRecyclerview">
+
+                        <!-- Add your content here -->
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#1D202B"
+                            android:padding="@dimen/_10sdp">
+                            -->
+
+                            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                android:id="@+id/circularProgressBar"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                app:cpb_background_progressbar_color="#282C3A"
+                                app:cpb_background_progressbar_width="15dp"
+                                app:cpb_progress="70"
+                                app:cpb_progress_direction="to_left"
+                                app:cpb_progressbar_color="#FFCC01"
+                                app:cpb_progressbar_color_direction="right_to_left"
+                                app:cpb_progressbar_width="15dp"
+                                app:cpb_round_border="false"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvdaysNohome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_20sdp"
+                                android:text="5"
+                                android:gravity="center_vertical"
+                                android:textColor="#FFCC01"
+                                android:textSize="@dimen/_35sdp"
+                                app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+                                app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
+                                app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="44dp"
+                                android:text="DAYS\nLEFT"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="#FFCC01"
+                                app:layout_constraintStart_toEndOf="@+id/tvdaysNohome"
+                                app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/trail_tv"
+                                android:textColor="#FFCC01"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.245"
+                                app:layout_constraintStart_toEndOf="@+id/circularProgressBar"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/getprimeBtnhome"
+                                android:layout_width="@dimen/_85sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginTop="32dp"
+                                android:background="@drawable/get_prime_button_bg"
+                                android:fontFamily="@font/poppinsbold"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingRight="@dimen/_10sdp"
+                                android:text="Get Prime"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.858"
+                                app:layout_constraintStart_toEndOf="@+id/circularProgressBar"
+                                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ettypeHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_edit_text"
+                        android:drawableEnd="@drawable/edittext_end_icon_chatgpt"
+                        android:drawablePadding="10dp"
+                        android:hint="Type Here"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        app:layout_constraintTop_toBottomOf="@id/statusCard"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"></com.google.android.material.textfield.TextInputEditText>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
